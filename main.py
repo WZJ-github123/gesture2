@@ -21,6 +21,10 @@ def get_image(im):
 
 
 def get_roi(frame, x1, x2, y1, y2):
+    x1 = tf.convert_to_tensor(x1, dtype=tf.float64)
+    x2 = tf.convert_to_tensor(x2, dtype=tf.float64)
+    y1 = tf.convert_to_tensor(y1, dtype=tf.float64)
+    y2 = tf.convert_to_tensor(y2, dtype=tf.float64)
     dst = frame[x1:x2, y1:y2]
     cv.rectangle(frame, (x1, y1), (x2, y2), (0, 0, 255), thickness=2)
     return dst
