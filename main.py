@@ -86,23 +86,23 @@ def get_files(file_dir):
                 list_3.append(image_name_path)
                 label_3.append(3)
             elif image_file_path[-1:] == '4':
-                list_3.append(image_name_path)
-                label_3.append(4)
-            elif image_file_path[-1:] == '5':
-                list_3.append(image_name_path)
-                label_3.append(5)
-            elif image_file_path[-1:] == '6':
-                list_3.append(image_name_path)
-                label_3.append(6)
-            elif image_file_path[-1:] == '7':
-                list_3.append(image_name_path)
-                label_3.append(7)
-            elif image_file_path[-1:] == '8':
-                list_3.append(image_name_path)
-                label_3.append(8)
-            else:
                 list_4.append(image_name_path)
-                label_4.append(9)
+                label_4.append(4)
+            elif image_file_path[-1:] == '5':
+                list_5.append(image_name_path)
+                label_5.append(5)
+            elif image_file_path[-1:] == '6':
+                list_6.append(image_name_path)
+                label_6.append(6)
+            elif image_file_path[-1:] == '7':
+                list_7.append(image_name_path)
+                label_7.append(7)
+            elif image_file_path[-1:] == '8':
+                list_8.append(image_name_path)
+                label_8.append(8)
+            else:
+                list_9.append(image_name_path)
+                label_9.append(9)
 
     # 合并数据
     image_list = np.hstack((list_0, list_1, list_2, list_3, list_4, list_5, list_6, list_7, list_8, list_9))
